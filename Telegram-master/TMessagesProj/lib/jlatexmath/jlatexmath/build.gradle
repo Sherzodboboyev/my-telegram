@@ -1,0 +1,28 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace 'ru.noties.jlatexmath.android'
+    compileSdk 34
+    buildToolsVersion '34.0.0'
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    sourceSets {
+        test.java.srcDirs = []
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    api 'androidx.annotation:annotation:1.7.0'
+}
